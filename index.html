@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Portfolio</title>
+    <title>Umniah Thweib | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -57,15 +57,30 @@
         </section>
 
         <section id="skills">
-            <h2>My Skills</h2>
-            <div class="skills-list">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>Java</span>
-                <span>GitHub</span>
-            </div>
-        </section>
+    <h2>My Skills</h2>
 
+    <div class="skills-list">
+        <div class="skill-card">
+            <span class="skill-icon">&lt;/&gt;</span>
+            <span>HTML</span>
+        </div>
+
+        <div class="skill-card">
+            <span class="skill-icon">#</span>
+            <span>CSS</span>
+        </div>
+
+        <div class="skill-card">
+            <span class="skill-icon">{ }</span>
+            <span>Java</span>
+        </div>
+
+        <div class="skill-card">
+            <span class="skill-icon">⌘</span>
+            <span>GitHub</span>
+        </div>
+    </div>
+</section>
 
         <section id="projects">
             <h2>My Projects</h2>
@@ -97,31 +112,51 @@
 
     <div class="social-links">
 
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=umniahthweib@gmail.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=umniahthweib@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Send me an email">
           <img src="imagess/Gmail.webp" alt="Email">
         </a>
 
 
 
-        <a href="https://github.com/UmnThw" target="_blank">
+        <a href="https://github.com/UmnThw" target="_blank" rel="noopener noreferrer"
+   aria-label="Visit my GitHub profile">
             <img src="imagess/github.webp" alt="GitHub">
         </a>
 
     </div>
 
-    <form>
-        <div class="contact-row">
-            <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="Email Address">
-        </div>
+    <form action="https://formspree.io/f/mnppawjz" method="POST">
 
-        <input type="text" placeholder="Subject">
+    <div class="contact-row">
+        <input type="text"
+               name="name"
+               placeholder="Full Name"
+               autocomplete="name"
+               required>
 
-        <textarea placeholder="Your Message"></textarea>
+        <input type="email"
+               name="email"
+               placeholder="Email Address"
+               autocomplete="email"
+               required>
+    </div>
 
+    <input type="text"
+           name="subject"
+           placeholder="Subject"
+           required>
+
+    <textarea name="message"
+              placeholder="Your Message"
+              required></textarea>
+
+    <div class="form-buttons">
         <button type="submit">Send Message</button>
+           <button type="reset">Clear</button>
+    </div>
     </form>
-</section>
+    </section>
+
 
     </main>
 
